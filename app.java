@@ -1,5 +1,5 @@
 import javax.swing.*;
-public class app
+class app2
 {
     public static void main(String args[])
     {
@@ -7,7 +7,10 @@ public class app
         {
             public void run()
             {
-               new gui().setVisible(true); 
+                new gui2().setVisible(true);
+                Song2 song = new Song2("D:/sorts/musicPlayer/musicPlayer/love came back.mp3");
+                System.out.println(song.getSongTitle());
+                System.out.println(song.getSongArtist());
             }
         });
     }
